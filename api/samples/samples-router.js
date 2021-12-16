@@ -1,5 +1,4 @@
 const router = require('express').Router();
-const server = require('../server');
 const Samples = require('./samples-model');
 
 router.get('/', (req, res, next) => {
@@ -34,4 +33,4 @@ router.delete('/:id', (req, res, next) => {
     .catch(next);
 });
 
-module.exports = server;
+module.exports = router;
