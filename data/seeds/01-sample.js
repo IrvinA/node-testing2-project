@@ -19,3 +19,5 @@ exports.seed = function (knex, Promise) {
       return knex('samples').insert(samples);
     });
 };
+
+exports.samples = samples;
